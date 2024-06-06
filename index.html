@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container" id="menuContainer">
+        <h1>Сайт-визитка</h1>
+        <form id="infoForm">
+            <div class="profile-pic">
+                <img src="resources/pic.png" alt="Profile Picture">
+            </div>
+            <div class="form-group">
+                <label for="firstName">Имя:</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Фамилия:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div class="form-group">
+                <label for="gender">Пол:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="menuGradient">Цвет градиента меню:</label>
+                <input type="color" id="menuGradient1" name="menuGradient1">
+                <input type="color" id="menuGradient2" name="menuGradient2">
+            </div>
+            <button type="button" onclick="updateProfile()">Обновить</button>
+        </form>
+        <div id="profile" class="profile">
+            <p id="displayFirstName"></p>
+            <p id="displayLastName"></p>
+            <p id="displayGender"></p>
+        </div>
+        <div class="navigation">
+            <button onclick="location.href='calculator.html'">Калькулятор</button>
+            <button onclick="location.href='page2.html'">Галерея изображений</button>
+            <button onclick="location.href='page3.html'">Контактная форма</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
